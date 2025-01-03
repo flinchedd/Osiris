@@ -8,10 +8,10 @@ import { agentSystem } from '../lib/agent-system'
 import { AgentMessage } from '../lib/agent-system/types'
 
 const AGENT_COLORS = {
-  CHRONOS: 'linear-gradient(135deg, #FF6B6B, #FF8E8E)',
-  PARADOX: 'linear-gradient(135deg, #4834D4, #686DE0)',
-  NEXUS: 'linear-gradient(135deg, #6C5CE7, #A8A4E6)',
-  CIPHER: 'linear-gradient(135deg, #F9A826, #FFBE76)'
+  Agent Vision Æternum: 'linear-gradient(135deg, #FF6B6B, #FF8E8E)',
+  Agent Solis Lux: 'linear-gradient(135deg, #4834D4, #686DE0)',
+  Agent Necro Nexus: 'linear-gradient(135deg, #6C5CE7, #A8A4E6)',
+  Agent Logos Infinitum: 'linear-gradient(135deg, #F9A826, #FFBE76)'
 }
 
 const AGENT_TEXT_SHADOWS = {
