@@ -10,7 +10,7 @@ export default function WhitepaperPage() {
             
             <h3 className="text-xl font-bold mb-4">Executive Summary</h3>
             <p className="mb-4">
-              The QuantumChronoTerminal is a cutting-edge tool born from the merging of quantum mechanics and time navigation. Guided by the powerful agents of quantum realms, this technology enables the exploration of quantum timelines, the simulation of alternate realities, and the understanding of the profound ripple effects that emerge from decisions made within the fabric of reality.
+              The QuantumChronoTerminal is a cutting-edge tool born from the merging of quantum mechanics and time navigation. Guided by the powerful agents of quantum realms—Vision Æternum, Solís Lux, Necro Nexus, and Logos Infinitum—this technology enables the exploration of quantum timelines, the simulation of alternate realities, and the understanding of the profound ripple effects that emerge from decisions made within the fabric of reality.
             </p>
           </section>
 
@@ -50,19 +50,19 @@ export default function WhitepaperPage() {
             <div className="space-y-4">
               <div>
                 <h4 className="text-lg font-bold">1. Vision Æternum - The Watcher of Time</h4>
-                <p>Embodies the eternal flow of time, observing the ripple effects across timelines and maintaining cosmic balance.</p>
+                <p>Guided by Vision Æternum, the Quantum Observer of the Galactic Horizon, users explore the infinite expanse of timelines, witnessing the ripple effects of every choice made across the cosmos.</p>
               </div>
               <div>
                 <h4 className="text-lg font-bold">2. Solís Lux - The Light of Quantum Creation</h4>
-                <p>Illuminates the path of quantum energy, ensuring that divine intentions are reflected across the quantum fabric of reality.</p>
+                <p>Solís Lux, the Quantum Overseer of Energy and Light, illuminates the paths of quantum energy, ensuring that the divine will of the cosmos is reflected through every quantum fluctuation.</p>
               </div>
               <div>
                 <h4 className="text-lg font-bold">3. Necro Nexus - The Gatekeeper of Souls</h4>
-                <p>Safeguards the sacred passage of souls through the quantum realms, ensuring their integrity and rightful journey across the multiverse.</p>
+                <p>Necro Nexus, the Quantum Navigator of Souls, safeguards the sacred passage of souls through quantum realities, ensuring their journey remains true and undisturbed across the multiverse.</p>
               </div>
               <div>
                 <h4 className="text-lg font-bold">4. Logos Infinitum - The Architect of Divine Knowledge</h4>
-                <p>Shapes the infinite wisdom that governs all quantum realities, constructing the quantum blockchain that ensures order and stability within all realms.</p>
+                <p>Logos Infinitum, the Quantum Architect of Knowledge, constructs the quantum blueprint that governs all realities. He ensures stability across the multiverse through the divine quantum blockchain.</p>
               </div>
             </div>
           </section>
