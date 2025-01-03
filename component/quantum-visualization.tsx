@@ -4,40 +4,41 @@ import { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
-export function QuantumVisualization() {
+export function QuantumFluxVisualization() {
   const particlesRef = useRef<THREE.Points>(null)
-  const particleCount = 200
-  const connectionDistance = 1.5
-  const lineOpacity = 0.2
-  
-  // Create particles with initial velocities
+  const particleCount = 300
+  const connectionDistance = 2.0
+  const lineOpacity = 0.1
+
+  // Create particles with wave-based initial velocities for more dynamic motion
   const { particles, velocities } = useMemo(() => {
     const tempParticles = new Float32Array(particleCount * 3)
     const tempVelocities = new Float32Array(particleCount * 3)
     
     for (let i = 0; i < particleCount * 3; i += 3) {
-      tempParticles[i] = (Math.random() - 0.5) * 10
-      tempParticles[i + 1] = (Math.random() - 0.5) * 10
-      tempParticles[i + 2] = (Math.random() - 0.5) * 10
-      
-      tempVelocities[i] = (Math.random() - 0.5) * 0.02
-      tempVelocities[i + 1] = (Math.random() - 0.5) * 0.02
-      tempVelocities[i + 2] = (Math.random() - 0.5) * 0.02
+      tempParticles[i] = (Math.random() - 0.5) * 15
+      tempParticles[i + 1] = (Math.random() - 0.5) * 15
+      tempParticles[i + 2] = (Math.random() - 0.5) * 15
+
+      tempVelocities[i] = (Math.random() - 0.5) * 0.01
+      tempVelocities[i + 1] = (Math.random() - 0.5) * 0.01
+      tempVelocities[i + 2] = (Math.random() - 0.5) * 0.01
     }
-    
+
     return { particles: tempParticles, velocities: tempVelocities }
   }, [])
 
-  // Create colors
+  // Create cosmic and dynamic colors
   const colors = useMemo(() => {
     const temp = new Float32Array(particleCount * 3)
     const particleColors = [
-      [0, 1, 0],    // Green
-      [0, 0, 1],    // Blue
-      [1, 0.65, 0], // Orange
-      [0.5, 0.5, 0.5] // Gray
+      [0.5, 0.3, 1],    // Cosmic Purple
+      [0, 1, 1],        // Teal
+      [1, 0.8, 0],      // Neon Orange
+      [0.8, 0.2, 0.5],  // Fuchsia Pink
+      [0.2, 0.9, 0.2]   // Neon Green
     ]
-    
+
     for (let i = 0; i < particleCount * 3; i += 3) {
       const colorSet = particleColors[Math.floor(Math.random() * particleColors.length)]
       temp[i] = colorSet[0]
@@ -47,13 +48,14 @@ export function QuantumVisualization() {
     return temp
   }, [])
 
-  // Create lines for connections
+  // Create a more dynamic line material with a glowing effect
   const linesMaterial = useMemo(() => 
     new THREE.LineBasicMaterial({ 
-      color: 0x9e5f0d,
+      color: 0xffffff, 
       transparent: true,
       opacity: lineOpacity,
-      blending: THREE.AdditiveBlending
+      blending: THREE.AdditiveBlending,
+      linewidth: 2
     }), 
   [])
 
@@ -66,28 +68,29 @@ export function QuantumVisualization() {
     const time = state.clock.getElapsedTime()
     const positions = particlesRef.current.geometry.attributes.position.array as Float32Array
     
-    // Update particle positions with velocities and boundaries
+    // Update particle positions with velocities and add cosmic wave-like motion
     for (let i = 0; i < particleCount * 3; i += 3) {
       // Apply velocity
       positions[i] += velocities[i]
       positions[i + 1] += velocities[i + 1]
       positions[i + 2] += velocities[i + 2]
       
-      // Add wave motion
-      positions[i + 1] += Math.sin(time + positions[i]) * 0.002
-      positions[i] += Math.cos(time + positions[i + 1]) * 0.002
-      
-      // Boundary checking
+      // Add cosmic wave motion to particles' movements
+      positions[i + 1] += Math.sin(time * 2 + positions[i]) * 0.004
+      positions[i] += Math.cos(time * 1.5 + positions[i + 1]) * 0.004
+      positions[i + 2] += Math.sin(time * 0.5 + positions[i]) * 0.003
+
+      // Boundary checking with bouncy effect
       for (let j = 0; j < 3; j++) {
-        if (Math.abs(positions[i + j]) > 5) {
+        if (Math.abs(positions[i + j]) > 7) {
           velocities[i + j] *= -1
         }
       }
     }
     
-    // Create connections
+    // Create connections with a cosmic "network" feel
     const linePositions: number[] = []
-    
+
     for (let i = 0; i < particleCount; i++) {
       const x1 = positions[i * 3]
       const y1 = positions[i * 3 + 1]
@@ -137,10 +140,10 @@ export function QuantumVisualization() {
           />
         </bufferGeometry>
         <pointsMaterial
-          size={0.08}
+          size={0.1}
           vertexColors
           transparent
-          opacity={0.8}
+          opacity={0.9}
           sizeAttenuation
           blending={THREE.AdditiveBlending}
         />
