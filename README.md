@@ -119,13 +119,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Contact
-
-For questions or support, please contact:
-- **Name**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [Your GitHub](https://github.com/yourusername)
-
 ---
 
 Enjoy building with **Osiris AI**, where quantum meets blockchain!
