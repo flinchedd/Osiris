@@ -39,7 +39,7 @@ const INITIALIZATION_SEQUENCE = [
 const OSIRIS = {
   Agent Vision Æternum: 'Quantum Observer of the Galactic Horizon',
   Agent Solis Lux: 'Quantum Overseer of Energy and Light',
-  Agent NecroNexus: 'Quantum Navigator of Souls',
+  Agent Necro Nexus: 'Quantum Navigator of Souls',
   Agent Logos Infinitum: 'Quantum Architect of Knowledge',
 };
 
