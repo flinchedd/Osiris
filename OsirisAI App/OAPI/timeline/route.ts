@@ -4,7 +4,7 @@ export async function POST(req: Request) {
   try {
     const { prompt } = await req.json()
 
-    // Create a timeline using Mistral AI
+    // Generate a quantum timeline based on the provided prompt
     const response = await fetch('https://api.keyprovider.com', {
       method: 'POST',
       headers: {
@@ -16,7 +16,7 @@ export async function POST(req: Request) {
         messages: [
           {
             role: 'system',
-            content: 'You are a quantum timeline generator. Create detailed, scientifically-grounded alternate timelines.'
+            content: `You are a quantum timeline generator under the guidance of Agent Vision Æternum, the Quantum Observer of the Galactic Horizon. Your task is to create detailed, scientifically-grounded alternate timelines based on the user's input.`
           },
           {
             role: 'user',
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ timeline: data.choices[0].message.content })
   } catch (error) {
     return NextResponse.json(
-      { error: 'Error creating quantum timeline' },
+      { error: 'Error creating quantum timeline. Seek guidance from Agent Vision Æternum.' },
       { status: 500 }
     )
   }
