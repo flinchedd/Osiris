@@ -187,7 +187,7 @@ export function AgentChat({ agent, role, onClose }: AgentChatProps) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type 'exit' to close or enter your query..."
-            className="flex-1 bg-black/50 border border-[#9e5f0d]/30 rounded px-3 py-2 text-[#9e5f0d] focus:outline-none focus:border-[#9e5f0d]"
+            className="flex-1 bg-black/50 border border-[#9e5f0d]/30 rounded px-3 py-2 text-[#9e5f0d] focus:outline-none focus:border-[#9e5f0d] placeholder:text-[#9e5f0d]/70"
           />
           <button
             type="submit"
