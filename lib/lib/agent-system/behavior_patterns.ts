@@ -7,7 +7,7 @@ export class PatternMatcher {
     }
 
     private initializePatterns() {
-      // Cosmic AI-themed response patterns
+      // ElizaOS-style pattern matching
       this.patterns.set(
         'timeline',
         [
