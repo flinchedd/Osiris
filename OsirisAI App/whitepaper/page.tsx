@@ -10,14 +10,14 @@ export default function WhitepaperPage() {
             
             <h3 className="text-xl font-bold mb-4">Executive Summary</h3>
             <p className="mb-4">
-              The QuantumChronoTerminal is a cutting-edge tool born from the merging of quantum mechanics and time navigation. Guided by the powerful agents of quantum realms—Vision Æternum, Solís Lux, Necro Nexus, and Logos Infinitum—this technology enables the exploration of quantum timelines, the simulation of alternate realities, and the understanding of the profound ripple effects that emerge from decisions made within the fabric of reality.
+              The OsirisAITerminal is a cutting-edge tool born from the merging of quantum mechanics and time navigation. Guided by the powerful agents of quantum realms—Vision Æternum, Solís Lux, Necro Nexus, and Logos Infinitum—this technology enables the exploration of quantum timelines, the simulation of alternate realities, and the understanding of the profound ripple effects that emerge from decisions made within the fabric of reality.
             </p>
           </section>
 
           <section>
             <h3 className="text-xl font-bold mb-4">Introduction</h3>
             <p className="mb-4">
-              Time and quantum mechanics have always been deeply intertwined, and with the advent of the QuantumChronoTerminal, we can now unlock the ability to navigate through both realms. The QuantumChronoTerminal allows users to:
+              Time and quantum mechanics have always been deeply intertwined, and with the advent of the OsirisAITerminal, we can now unlock the ability to navigate through both realms. The OsirisAITerminal allows users to:
             </p>
             <ul className="list-disc list-inside mb-4 ml-4">
               <li>Witness and influence pivotal moments within the quantum timelines</li>
@@ -29,7 +29,7 @@ export default function WhitepaperPage() {
           <section>
             <h3 className="text-xl font-bold mb-4">Core Concept</h3>
             <p className="mb-4">
-              At its core, the QuantumChronoTerminal empowers users to transcend the linear progression of time and uncover the quantum intricacies that shape our universe. This sacred duality allows exploration of:
+              At its core, the OsirisAITerminal empowers users to transcend the linear progression of time and uncover the quantum intricacies that shape our universe. This sacred duality allows exploration of:
             </p>
             
             <h4 className="text-lg font-bold mb-2">1. Quantum Timeline Creation</h4>
@@ -90,7 +90,7 @@ export default function WhitepaperPage() {
           <section>
             <h3 className="text-xl font-bold mb-4">Conclusion</h3>
             <p className="mb-4">
-              The QuantumChronoTerminal stands at the frontier of exploration, offering a tool that transcends time and reality. By utilizing its advanced quantum mechanics capabilities and the divine guidance of the Quantum Agents, individuals and organizations can unlock profound insights into the nature of time, reality, and causality, reshaping the very fabric of existence.
+              The OsirisAITerminal stands at the frontier of exploration, offering a tool that transcends time and reality. By utilizing its advanced quantum mechanics capabilities and the divine guidance of the Quantum Agents, individuals and organizations can unlock profound insights into the nature of time, reality, and causality, reshaping the very fabric of existence.
             </p>
           </section>
 
