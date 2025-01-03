@@ -10,7 +10,7 @@ export function QuantumFluxVisualization() {
   const connectionDistance = 2.0
   const lineOpacity = 0.1
 
-  // Create particles with wave-based initial velocities for more dynamic motion
+  // Create particles with wave-based initial velocities for more dynamic motion and randomness
   const { particles, velocities } = useMemo(() => {
     const tempParticles = new Float32Array(particleCount * 3)
     const tempVelocities = new Float32Array(particleCount * 3)
