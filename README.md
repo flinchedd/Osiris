@@ -1,43 +1,43 @@
 ### Osiris AI  
-_A groundbreaking fusion of quantum computing and blockchain technology._  
+_A platform combining quantum computing and blockchain technology._  
 
-Osiris AI enables seamless deployment and management of quantum-enhanced AI agents, leveraging quantum computations and interacting directly with the Solana blockchain for unparalleled scalability and efficiency.  
+Osiris AI provides tools for deploying and managing quantum-enabled AI agents. These agents utilize quantum computations and interact with the Solana blockchain for efficient and scalable operations.  
 
 ---
 
 ### Features  
-- **Quantum Agent Framework**: Deploy and manage customizable AI agents.  
-- **Quantum Backend**: Supports Grover’s search, Quantum Fourier Transform (QFT), and other quantum tasks.  
-- **Solana Integration**: Perform balance queries, transactions, and decentralized operations.  
-- **Developer-Friendly CLI**: Execute tasks and interact with the system effortlessly.  
-- **Extensible Design**: Add new quantum algorithms, blockchain features, or agent functionalities.  
+- **Quantum Agent Framework**: Manage and deploy AI agents.  
+- **Quantum Backend**: Includes quantum algorithms like Grover’s search and QFT.  
+- **Solana Integration**: Query balances, process transactions, and interact with decentralized systems.  
+- **CLI Tool**: Command-line interface for streamlined interactions.  
+- **Extensible Design**: Supports adding new quantum algorithms and blockchain features.  
 
 ---
 
 ### Getting Started  
 
 #### Prerequisites  
-- **Python 3.8+**  
-- **Pip** (Python Package Manager)  
-- **Solana CLI** (optional, for advanced blockchain operations)  
-- **Quantum Simulator** (optional, for local quantum computations)  
+- Python 3.8+  
+- Pip (Python package manager)  
+- Solana CLI (optional for blockchain operations)  
+- Quantum Simulator (optional for local quantum computations)  
 
 #### Installation  
-1. **Clone the Repository**:  
+1. Clone the repository:  
    ```bash
    git clone https://github.com/yourusername/osiris-ai.git
    cd osiris-ai
    ```
-2. **Set Up Virtual Environment**:  
+2. Set up a virtual environment:  
    ```bash
    python3 -m venv venv  
    source venv/bin/activate  # On Windows: venv\Scripts\activate  
    ```
-3. **Install Dependencies**:  
+3. Install dependencies:  
    ```bash
    pip install -r requirements.txt  
    ```
-4. **Configure Environment**:  
+4. Configure environment variables:  
    Create a `.env` file with:  
    ```env
    SOLANA_ENDPOINT=https://api.mainnet-beta.solana.com
@@ -48,7 +48,7 @@ Osiris AI enables seamless deployment and management of quantum-enhanced AI agen
 ### Usage  
 
 #### Running the CLI  
-Use the CLI to execute tasks:  
+Use the CLI to perform tasks:  
 ```bash
 python src/main.py --task <task_name> --params '<parameters>'
 ```  
@@ -69,7 +69,7 @@ python src/main.py --task "grover_search" --params '{"database": [1, 2, 3, 4], "
 ---
 
 ### Testing  
-Run the test suite to validate functionality:  
+Run tests to verify functionality:  
 ```bash
 pytest tests/
 ```  
@@ -77,15 +77,13 @@ pytest tests/
 ---
 
 ### Contributing  
-1. Fork the repo.  
-2. Create a branch: `git checkout -b feature-name`  
+1. Fork the repository.  
+2. Create a new branch: `git checkout -b feature-name`  
 3. Commit changes: `git commit -m "Add feature-name"`  
-4. Push: `git push origin feature-name`  
+4. Push changes: `git push origin feature-name`  
 5. Open a pull request.  
 
 ---
 
 ### License  
-This project is licensed under the MIT License.  
-
-**Osiris AI** — where quantum meets blockchain.
+This project is licensed under the MIT License.
